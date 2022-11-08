@@ -4,9 +4,9 @@
   font-family: "ngprom";
   src:url("../fonts/ngprom.eot");
   src:url("../fonts/ngprom.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/ngprom.woff") format("woff"),
-    url("../fonts/ngprom.ttf") format("truetype"),
-    url("../fonts/ngprom.svg#ngprom") format("svg");
+  url("../fonts/ngprom.woff") format("woff"),
+  url("../fonts/ngprom.ttf") format("truetype"),
+  url("../fonts/ngprom.svg#ngprom") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -94,4 +94,7 @@
 }
 .icon-search:before {
   content: "\73";
+}
+.icon-clock:before {
+  content: "\74";
 }
