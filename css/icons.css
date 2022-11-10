@@ -98,3 +98,12 @@
 .icon-clock:before {
   content: "\74";
 }
+.icon-pers:before {
+  content: "\75";
+}
+.icon-catalog:before {
+  content: "\76";
+}
+.icon-left-lg:before {
+  content: "\77";
+}

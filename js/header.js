@@ -7,5 +7,12 @@ $(function() {
                 $(".header").removeClass("hidden");
             }
         }
+        else{
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("top");
+            } else {
+                $(".header").removeClass("top");
+            }
+        }
     });
 });

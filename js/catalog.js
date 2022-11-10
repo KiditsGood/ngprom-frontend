@@ -12,10 +12,17 @@ $('.header__main-cat').click(function () {
 })
 
 $('button.catalog__item').click(function () {
-    $(this).addClass('active').siblings().removeClass('active')
+    if ($(window).width() > 999){
+        $(this).addClass('active').siblings().removeClass('active')
+    }
     let id = $(this).attr('data-tab'),
         content = $('.catalog--peace[data-tab="'+ id +'"]')
 
     $('.catalog--peace.active').removeClass('active')
     content.addClass('active')
+
+    if ($(window).width() < 1000) {
+        $('.catalog--left').addClass('check')
+        $('.catalog--right').addClass('check')
+    }
 })

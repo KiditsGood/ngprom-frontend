@@ -36,6 +36,17 @@ const photoSlider = new Swiper('.photo__slider', {
     navigation: {
         prevEl: '.photo .product__slider-prev',
         nextEl: '.photo .product__slider-next'
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 1
+        },
+        580: {
+            slidesPerView: 2
+        },
+        800: {
+            slidesPerView: 3
+        }
     }
 })
 
@@ -47,6 +58,17 @@ const serviceSlider = new Swiper('.service__bot', {
     navigation: {
         prevEl: '.service .product__slider-prev',
         nextEl: '.service .product__slider-next'
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 2
+        },
+        580: {
+            slidesPerView: 3
+        },
+        800: {
+            slidesPerView: 4
+        }
     }
 })
 
@@ -58,5 +80,16 @@ const brandsSlider = new Swiper('.brand__field', {
     navigation: {
         prevEl: '.brands .product__slider-prev',
         nextEl: '.brands .product__slider-next'
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 3
+        },
+        580: {
+            slidesPerView: 4
+        },
+        800: {
+            slidesPerView: 5
+        }
     }
 })
