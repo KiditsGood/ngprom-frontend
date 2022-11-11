@@ -2,6 +2,27 @@ $('.header__mobile-burger').click(function () {
     burgerHandler()
 })
 
+$('.menu__item:first-child').click(function () {
+    if($(this).hasClass('active')){
+        mobileCatalog()
+        $('.header__logo, .header__mobile-phone, .header__mobile-burger').remove()
+        $('body').addClass('hidden')
+    }
+    else {
+        $('.catalog').removeClass('active')
+        $('.mobile__back, .header__main-search, .mobile__phone').remove()
+        $('.header__bottom').append(`
+            <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="" class="header__logo-image"></a>
+            <a href="tel: +7 369 456 78 98" class="header__mobile-phone">+7 369 456 78 98</a>
+            <div class="header__mobile-burger" onclick="burgerHandler()">
+                <span></span>
+            </div>
+        `)
+
+        $('body').removeClass('hidden')
+    }
+})
+
 $(document).ready(function () {
     if ($(window).width() < 1000) {
         $('.header .header__nav').append(`

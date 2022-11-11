@@ -1,3 +1,8 @@
 $('.menu__item').click(function () {
-    $(this).addClass('active').siblings().removeClass('active')
+    if($(this).hasClass('active')) {
+        $(this).removeClass('active')
+    }
+    else {
+        $(this).addClass('active')
+    }
 })

@@ -51,7 +51,6 @@ const photoSlider = new Swiper('.photo__slider', {
 })
 
 const serviceSlider = new Swiper('.service__bot', {
-    slidesPerView: 5,
     spaceBetween: 20,
     loop: true,
     autoplay: true,
@@ -68,12 +67,14 @@ const serviceSlider = new Swiper('.service__bot', {
         },
         800: {
             slidesPerView: 4
+        },
+        1000: {
+            slidesPerView: 5
         }
     }
 })
 
 const brandsSlider = new Swiper('.brand__field', {
-    slidesPerView: 6,
     spaceBetween: 24,
     loop: true,
     autoplay: true,
@@ -90,6 +91,9 @@ const brandsSlider = new Swiper('.brand__field', {
         },
         800: {
             slidesPerView: 5
+        },
+        1000: {
+            slidesPerView: 6
         }
     }
 })
