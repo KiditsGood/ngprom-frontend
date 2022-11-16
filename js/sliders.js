@@ -27,6 +27,24 @@ if ($(window).width() > 999) {
             nextEl: '.new .product__slider-next'
         }
     })
+
+    const beforeSlider = new Swiper('.before .product__slider-field', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            prevEl: '.before .product__slider-prev',
+            nextEl: '.before .product__slider-next'
+        }
+    })
+
+    const withSlider = new Swiper('.with .product__slider-field', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            prevEl: '.with .product__slider-prev',
+            nextEl: '.with .product__slider-next'
+        }
+    })
 }
 
 
@@ -95,5 +113,21 @@ const brandsSlider = new Swiper('.brand__field', {
         1000: {
             slidesPerView: 6
         }
+    }
+})
+
+const bigCardLeft = new Swiper('.product__card-images--left--field', {
+    direction: 'vertical',
+    slidesPerView: 4,
+    spaceBetween: 12,
+    navigation:{
+        prevEl: '.product__card-prev',
+        nextEl: '.product__card-next'
+    }
+})
+
+const bigCardRight = new Swiper('.product__card-images--right', {
+    thumbs: {
+        swiper: bigCardLeft
     }
 })

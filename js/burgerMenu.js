@@ -2,11 +2,14 @@ $('.header__mobile-burger').click(function () {
     burgerHandler()
 })
 
+
+
 $('.menu__item:first-child').click(function () {
     if($(this).hasClass('active')){
         mobileCatalog()
         $('.header__logo, .header__mobile-phone, .header__mobile-burger').remove()
         $('body').addClass('hidden')
+
     }
     else {
         $('.catalog').removeClass('active')
@@ -57,6 +60,9 @@ function mobileCatalog() {
         </div>
         <i class="mobile__phone icon-phone" onclick="location.href='tel: +7 369 456 78 98'"></i>
     `)
+
+    $('.menu__item:first-child').addClass('active')
+    $(".header").removeClass("top")
 }
 
 function backHandler() {
@@ -76,6 +82,7 @@ function backHandler() {
         `)
 
         $('body').removeClass('hidden')
+        $('.menu__item:first-child').removeClass('active')
     }
 }
 

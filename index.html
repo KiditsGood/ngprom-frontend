@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" href="css/modal.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/swiper.css"/>
+	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
 	<title>Title</title>
 </head>
 <body>
@@ -40,7 +41,9 @@
 		<div class="header__buttons">
 			<a href="" class="header__buttons-item"></a>
 			<a href="" class="header__buttons-item auth"></a>
-			<a href="" class="header__buttons-item"></a>
+			<a href="" class="header__buttons-item">
+				<p class="header__buttons-item--cart">5</p>
+			</a>
 		</div>
 		<a href="tel: +7 369 456 78 98" class="header__mobile-phone">+7 369 456 78 98</a>
 		<div class="header__mobile-burger">
@@ -854,6 +857,31 @@
 			<p class="menu__item-name">Корзина</p>
 		</div>
 	</section>
+	<div id="click">
+		<form class="click">
+			<p class="sub--title">ОФОРМИТЬ БЫСТРЫЙ ЗАКАЗ</p>
+			<div class="click__field">
+				<img src="img/pr1.png" alt="" class="product__link-image">
+				<div class="product__link-block">
+					<p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+					<div class="product__link-chars">
+						<div class="product__link-chars--item">
+							<p class="product__chars-name">Внутренний диаметр, мм</p>
+							<p class="product__chars-value">22</p>
+						</div>
+						<div class="product__link-chars--item">
+							<p class="product__chars-name">Наружный диаметр, мм</p>
+							<p class="product__chars-value">29.2</p>
+						</div>
+						<div class="product__link-chars--item">
+							<p class="product__chars-name">Ширина, мм</p>
+							<p class="product__chars-value">3.2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
 </main>
 <footer class="footer">
 	<div class="footer--wrap">
@@ -905,5 +933,7 @@
 <script src="js/bottomMenu.js"></script>
 <script src="js/burgerMenu.js"></script>
 <script src="js/productsListeners.js"></script>
+<script src="js/upArrow.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

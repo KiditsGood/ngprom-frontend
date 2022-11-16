@@ -2,16 +2,16 @@ $(function() {
     $(window).on("scroll", function() {
         if($(window).width() > 999) {
             if($(window).scrollTop() > 50) {
-                $(".header").addClass("hidden");
+                $(".header").addClass("hidden")
             } else {
-                $(".header").removeClass("hidden");
+                $(".header").removeClass("hidden")
             }
         }
         else{
             if($(window).scrollTop() > 50) {
-                $(".header").addClass("top");
+                $(".header").addClass("top")
             } else {
-                $(".header").removeClass("top");
+                $(".header").removeClass("top")
             }
         }
     });
