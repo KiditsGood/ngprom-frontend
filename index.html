@@ -10,6 +10,108 @@
 	<title>Title</title>
 </head>
 <body>
+<div class="modals">
+	<div id="login" class="default">
+		<form action="" class="login__form">
+			<p class="sub--title">Войти</p>
+			<div class="login__form-item">
+				<p class="login__form-name">Email</p>
+				<input type="email" class="login__form-input" required>
+			</div>
+			<div class="login__form-item">
+				<p class="login__form-name">Пароль</p>
+				<input type="password" class="login__form-input" required>
+			</div>
+			<button type="button" class="login__form-forgot">Забыли пароль?</button>
+			<button type="submit" class="login__form-submit button--light">Войти</button>
+			<p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go reg">Зарегистрироваться</span></p>
+			<a href="" rel="modal:close" class="login__form-close">
+				<span></span>
+				<span></span>
+			</a>
+		</form>
+	</div>
+	<div id="reset" class="default">
+		<form action="" class="login__form reset__form">
+			<p class="sub--title">Восстановить пароль</p>
+			<div class="login__form-item">
+				<p class="login__form-name">Email</p>
+				<input type="email" class="login__form-input" required>
+			</div>
+			<div class="login__form-buttons">
+				<button type="button" class="login__form-cancel button--outline">Отмена</button>
+				<button type="submit" class="login__form-link button--light">Отправить ссылку</button>
+			</div>
+
+			<a href="" rel="modal:close" class="login__form-close">
+				<span></span>
+				<span></span>
+			</a>
+		</form>
+	</div>
+	<div id="success" class="default">
+		<form action="" class="login__form reset__form">
+			<img src="img/success_check.svg" alt="" class="login__form-success">
+			<div class="login__form-text">
+				<p class="login__form-text--title">Код отправлен</p>
+				<p class="login__form-text--desc">Мы отправили код на вашу почту. Если не нашли сообщение, проверьте папку спам.</p>
+				<p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
+			</div>
+
+			<a href="" rel="modal:close" class="login__form-close">
+				<span></span>
+				<span></span>
+			</a>
+		</form>
+	</div>
+	<div id="reg" class="default">
+		<form action="" class="login__form">
+			<p class="sub--title">Регистрация</p>
+			<div class="login__flex">
+				<div class="login__form-item">
+					<p class="login__form-name">Имя</p>
+					<input type="text" class="login__form-input" required>
+				</div>
+				<div class="login--flex">
+					<div class="login__form-item">
+						<p class="login__form-name">Телефон</p>
+						<input type="tel" class="login__form-input" required>
+					</div>
+					<div class="login__form-item">
+						<p class="login__form-name">Email</p>
+						<input type="email" class="login__form-input" required>
+					</div>
+				</div>
+			</div>
+			<div class="login__switch">
+				<button type="button" class="login__switch-button active button--outline">Физическое лицо</button>
+				<button type="button" class="login__switch-button button--outline">Юридическое лицо</button>
+			</div>
+			<div class="login__hidden">
+				<div class="login__form-item">
+					<p class="login__form-name">Наименование</p>
+					<input type="text" class="login__form-input yur" required readonly>
+				</div>
+				<div class="login--flex">
+					<div class="login__form-item">
+						<p class="login__form-name">ИНН</p>
+						<input type="text" class="login__form-input yur" required readonly>
+					</div>
+					<div class="login__form-item">
+						<p class="login__form-name">КПП</p>
+						<input type="text" class="login__form-input yur" required readonly>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="login__form-submit button--light">Зарегистрироваться</button>
+			<p class="login__form-reg">Уже есть аккаунт? <span class="login__form-reg--go entry">Вход</span></p>
+			<a href="" rel="modal:close" class="login__form-close">
+				<span></span>
+				<span></span>
+			</a>
+		</form>
+	</div>
+</div>
 <header class="header">
 	<div class="header__top">
 		<div class="header__top-wrap">
@@ -39,8 +141,8 @@
 			</div>
 		</div>
 		<div class="header__buttons">
-			<a href="" class="header__buttons-item"></a>
-			<a href="" class="header__buttons-item auth"></a>
+			<a href="tel: +7 369 456 78 98" class="header__buttons-item"></a>
+			<a class="header__buttons-item auth"></a>
 			<a href="" class="header__buttons-item">
 				<p class="header__buttons-item--cart">5</p>
 			</a>
@@ -861,26 +963,52 @@
 		<form class="click">
 			<p class="sub--title">ОФОРМИТЬ БЫСТРЫЙ ЗАКАЗ</p>
 			<div class="click__field">
-				<img src="img/pr1.png" alt="" class="product__link-image">
-				<div class="product__link-block">
-					<p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
-					<div class="product__link-chars">
-						<div class="product__link-chars--item">
-							<p class="product__chars-name">Внутренний диаметр, мм</p>
-							<p class="product__chars-value">22</p>
+				<div class="click__field-wrapper">
+					<img src="img/pr1.png" alt="" class="product__link-image">
+					<div class="product__link-block">
+						<p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+						<div class="product__link-chars">
+							<div class="product__link-chars--item">
+								<p class="product__chars-name">Внутренний диаметр, мм</p>
+								<p class="product__chars-value">22</p>
+							</div>
+							<div class="product__link-chars--item">
+								<p class="product__chars-name">Наружный диаметр, мм</p>
+								<p class="product__chars-value">29.2</p>
+							</div>
+							<div class="product__link-chars--item">
+								<p class="product__chars-name">Ширина, мм</p>
+								<p class="product__chars-value">3.2</p>
+							</div>
 						</div>
-						<div class="product__link-chars--item">
-							<p class="product__chars-name">Наружный диаметр, мм</p>
-							<p class="product__chars-value">29.2</p>
-						</div>
-						<div class="product__link-chars--item">
-							<p class="product__chars-name">Ширина, мм</p>
-							<p class="product__chars-value">3.2</p>
+						<div class="product__price-value">
+							<p class="product__price-value--new">Количество: 1</p>
+							<p class="product__price-value--new">Стоимость: 351 375,25 ₽</p>
 						</div>
 					</div>
 				</div>
+				<div class="click__inputs">
+					<div class="click__inputs-top">
+						<input type="text" class="click--input" placeholder="Имя" required>
+						<input type="email" class="click--input" placeholder="Email" required>
+						<input type="tel" class="click--input" placeholder="Телефон" required>
+					</div>
+					<textarea class="click--textarea" placeholder="Комментарий к заказу"></textarea>
+				</div>
+				<button type="submit" class="button--light click__button">Купить</button>
 			</div>
+			<a rel="modal:close" class="close--modal">
+				<span></span>
+				<span></span>
+			</a>
 		</form>
+	</div>
+	<div id="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+		<a rel="modal:close" class="close--modal">
+			<span></span>
+			<span></span>
+		</a>
 	</div>
 </main>
 <footer class="footer">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper.css"/>
   <link rel="icon" type="image/x-icon" href="img/favicon.svg">
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="header__buttons">
-      <a href="" class="header__buttons-item"></a>
+      <a href="tel: +7 369 456 78 98" class="header__buttons-item"></a>
       <a href="" class="header__buttons-item auth"></a>
       <a href="" class="header__buttons-item">
         <p class="header__buttons-item--cart">5</p>
@@ -994,6 +994,57 @@
       <p class="menu__item-name">Корзина</p>
     </div>
   </section>
+  <div id="click">
+    <form class="click">
+      <p class="sub--title">ОФОРМИТЬ БЫСТРЫЙ ЗАКАЗ</p>
+      <div class="click__field">
+        <div class="click__field-wrapper">
+          <img src="img/pr1.png" alt="" class="product__link-image">
+          <div class="product__link-block">
+            <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+            <div class="product__link-chars">
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Внутренний диаметр, мм</p>
+                <p class="product__chars-value">22</p>
+              </div>
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Наружный диаметр, мм</p>
+                <p class="product__chars-value">29.2</p>
+              </div>
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Ширина, мм</p>
+                <p class="product__chars-value">3.2</p>
+              </div>
+            </div>
+            <div class="product__price-value">
+              <p class="product__price-value--new">Количество: 1</p>
+              <p class="product__price-value--new">Стоимость: 351 375,25 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="click__inputs">
+          <div class="click__inputs-top">
+            <input type="text" class="click--input" placeholder="Имя" required>
+            <input type="email" class="click--input" placeholder="Email" required>
+            <input type="tel" class="click--input" placeholder="Телефон" required>
+          </div>
+          <textarea class="click--textarea" placeholder="Комментарий к заказу"></textarea>
+        </div>
+        <button type="submit" class="button--light click__button">Купить</button>
+      </div>
+      <a rel="modal:close" class="close--modal">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    <a rel="modal:close" class="close--modal">
+      <span></span>
+      <span></span>
+    </a>
+  </div>
 </main>
 <footer class="footer with--cart">
   <div class="footer--wrap">
@@ -1048,5 +1099,6 @@
 <script src="js/upArrow.js"></script>
 <script src="js/bigCard.js"></script>
 <script src="js/inputValidation.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

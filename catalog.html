@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.css"/>
+  <link rel="stylesheet" href="css/noUiSlider.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+  <title>Title</title>
+</head>
+<body>
+<div class="modals">
+  <div id="login" class="default">
+    <form action="" class="login__form">
+      <p class="sub--title">Войти</p>
+      <div class="login__form-item">
+        <p class="login__form-name">Email</p>
+        <input type="email" class="login__form-input" required>
+      </div>
+      <div class="login__form-item">
+        <p class="login__form-name">Пароль</p>
+        <input type="password" class="login__form-input" required>
+      </div>
+      <button type="button" class="login__form-forgot">Забыли пароль?</button>
+      <button type="submit" class="login__form-submit button--light">Войти</button>
+      <p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go reg">Зарегистрироваться</span></p>
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="reset" class="default">
+    <form action="" class="login__form reset__form">
+      <p class="sub--title">Восстановить пароль</p>
+      <div class="login__form-item">
+        <p class="login__form-name">Email</p>
+        <input type="email" class="login__form-input" required>
+      </div>
+      <div class="login__form-buttons">
+        <button type="button" class="login__form-cancel button--outline">Отмена</button>
+        <button type="submit" class="login__form-link button--light">Отправить ссылку</button>
+      </div>
+
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="success" class="default">
+    <form action="" class="login__form reset__form">
+      <img src="img/success_check.svg" alt="" class="login__form-success">
+      <div class="login__form-text">
+        <p class="login__form-text--title">Код отправлен</p>
+        <p class="login__form-text--desc">Мы отправили код на вашу почту. Если не нашли сообщение, проверьте папку спам.</p>
+        <p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
+      </div>
+
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="reg" class="default">
+    <form action="" class="login__form">
+      <p class="sub--title">Регистрация</p>
+      <div class="login__flex">
+        <div class="login__form-item">
+          <p class="login__form-name">Имя</p>
+          <input type="text" class="login__form-input" required>
+        </div>
+        <div class="login--flex">
+          <div class="login__form-item">
+            <p class="login__form-name">Телефон</p>
+            <input type="tel" class="login__form-input" required>
+          </div>
+          <div class="login__form-item">
+            <p class="login__form-name">Email</p>
+            <input type="email" class="login__form-input" required>
+          </div>
+        </div>
+      </div>
+      <div class="login__switch">
+        <button type="button" class="login__switch-button active button--outline">Физическое лицо</button>
+        <button type="button" class="login__switch-button button--outline">Юридическое лицо</button>
+      </div>
+      <div class="login__hidden">
+        <div class="login__form-item">
+          <p class="login__form-name">Наименование</p>
+          <input type="text" class="login__form-input yur" required readonly>
+        </div>
+        <div class="login--flex">
+          <div class="login__form-item">
+            <p class="login__form-name">ИНН</p>
+            <input type="text" class="login__form-input yur" required readonly>
+          </div>
+          <div class="login__form-item">
+            <p class="login__form-name">КПП</p>
+            <input type="text" class="login__form-input yur" required readonly>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="login__form-submit button--light">Зарегистрироваться</button>
+      <p class="login__form-reg">Уже есть аккаунт? <span class="login__form-reg--go entry">Вход</span></p>
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+</div>
+<header class="header">
+  <div class="header__top">
+    <div class="header__top-wrap">
+      <div class="header__address">
+        <p class="header__address-text">Подольск, Садовая 20</p>
+      </div>
+      <nav class="header__nav">
+        <a href="" class="header__nav-item red">Акции</a>
+        <a href="" class="header__nav-item">Каталоги производителей</a>
+        <a href="" class="header__nav-item">Оптовым покупателям</a>
+        <a href="" class="header__nav-item">Ремонт и обслуживание</a>
+        <a href="" class="header__nav-item">Гарантии</a>
+        <a href="" class="header__nav-item">О нас</a>
+        <a href="" class="header__nav-item">Новости</a>
+        <a href="" class="header__nav-item">Контакты</a>
+      </nav>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.svg" alt="" class="header__logo-image">
+    </a>
+    <div class="header__main">
+      <button class="header__main-cat">Каталог товаров</button>
+      <div class="header__main-search">
+        <input type="text" class="header__main-search--input" placeholder="Поиск по сайту">
+      </div>
+    </div>
+    <div class="header__buttons">
+      <a href="tel: +7 369 456 78 98" class="header__buttons-item"></a>
+      <a class="header__buttons-item auth"></a>
+      <a href="" class="header__buttons-item">
+        <p class="header__buttons-item--cart">5</p>
+      </a>
+    </div>
+    <a href="tel: +7 369 456 78 98" class="header__mobile-phone">+7 369 456 78 98</a>
+    <div class="header__mobile-burger">
+      <span></span>
+    </div>
+  </div>
+</header>
+<main class="wrapper">
+  <section class="crumbs">
+    <a href="" class="crumbs__item">Главная</a>
+    <a href="" class="crumbs__item">Уплотнения</a>
+  </section>
+  <section class="point">
+    <h1 class="point__title">Уплотнения поршня гидроцилиндров </h1>
+    <div class="point__field">
+      <div class="point__field-item">
+        <img src="img/point1.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Уплотнения поршня гидроцилиндров</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point2.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Уплотнения штока</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point3.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Грязесъемники</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point4.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Наборы</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point5.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Кольца направляющие, лента</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point6.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Ремкомплекты</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point7.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Уплотнения пневмоцилиндров</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point8.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Уплотнения поршня гидроцилиндров</p>
+      </div>
+      <div class="point__field-item">
+        <img src="img/point9.webp" alt="" class="point__field-item--image">
+        <p class="point__field-item--name">Статические уплотнения</p>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <aside class="products__filter">
+      <div class="products__filter-top">
+        <p class="products__filter-top--text">Фильтры</p>
+        <p class="products__filter-top--button">Сбросить</p>
+      </div>
+      <div class="products__filter-bottom">
+        <div class="catalog__filter-item">
+          <p class="filter__name">Цена, р</p>
+          <div class="filter__chars">
+            <p class="filter__chars-item">От</p>
+            <p class="filter__chars-item">До</p>
+          </div>
+          <div class="filter__range">
+            <label class="filter__range-label">
+              <input type="number" class="filter__range-input range--min">
+              <input type="number" class="filter__range-input range--max">
+            </label>
+            <div class="filter__range-slider range" data-min="0" data-max="5500" data-min-new="500" data-max-new="5000"></div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <p class="filter__name">Наружный диаметр, мм</p>
+          <div class="filter__chars">
+            <p class="filter__chars-item">От</p>
+            <p class="filter__chars-item">До</p>
+          </div>
+          <div class="filter__range">
+            <label class="filter__range-label">
+              <input type="number" class="filter__range-input range--min">
+              <input type="number" class="filter__range-input range--max">
+            </label>
+            <div class="filter__range-slider range" data-min="0" data-max="5500" data-min-new="500" data-max-new="5000"></div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <p class="filter__name">Внутренний диаметр, мм</p>
+          <div class="filter__chars">
+            <p class="filter__chars-item">От</p>
+            <p class="filter__chars-item">До</p>
+          </div>
+          <div class="filter__range">
+            <label class="filter__range-label">
+              <input type="number" class="filter__range-input range--min">
+              <input type="number" class="filter__range-input range--max">
+            </label>
+            <div class="filter__range-slider range" data-min="0" data-max="5500" data-min-new="500" data-max-new="5000"></div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <p class="filter__name">Ширина, мм</p>
+          <div class="filter__chars">
+            <p class="filter__chars-item">От</p>
+            <p class="filter__chars-item">До</p>
+          </div>
+          <div class="filter__range">
+            <label class="filter__range-label">
+              <input type="number" class="filter__range-input range--min">
+              <input type="number" class="filter__range-input range--max">
+            </label>
+            <div class="filter__range-slider range" data-min="0" data-max="5500" data-min-new="500" data-max-new="5000"></div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <p class="filter__name">Бренд</p>
+          <input class="filter__search" type="text" placeholder="Я ищу..">
+          <div class="filter__check search__check">
+            <input class="filter__check-box--check" type="checkbox" id="1" name="brand1">
+            <label for="1" class="filter__check-box--label">
+              Бренд 1
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="2" name="brand2">
+            <label for="2" class="filter__check-box--label">
+              Бренд 2
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="3" name="brand3">
+            <label for="3" class="filter__check-box--label">
+              Бренд 3
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="4" name="brand4">
+            <label for="4" class="filter__check-box--label">
+              Бренд 4
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="5" name="brand5">
+            <label for="5" class="filter__check-box--label">
+              Бренд 5
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="6" name="brand1">
+            <label for="6" class="filter__check-box--label">
+              Бренд 6
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="7" name="brand2">
+            <label for="7" class="filter__check-box--label">
+              Бренд 7
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="8" name="brand3">
+            <label for="8" class="filter__check-box--label">
+              Бренд 8
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="9" name="brand4">
+            <label for="9" class="filter__check-box--label">
+              Бренд 9
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="10" name="brand5">
+            <label for="10" class="filter__check-box--label">
+              Бренд 10
+              <p class="filter__check-box--value">12</p>
+            </label>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <p class="filter__name">Материал</p>
+          <input class="filter__search" type="text" placeholder="Я ищу..">
+          <div class="filter__check search__check">
+            <input class="filter__check-box--check" type="checkbox" id="11" name="brand1">
+            <label for="11" class="filter__check-box--label">
+              Материал 1
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="12" name="brand2">
+            <label for="12" class="filter__check-box--label">
+              Материал 2
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="13" name="brand3">
+            <label for="13" class="filter__check-box--label">
+              Материал 3
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="14" name="brand4">
+            <label for="14" class="filter__check-box--label">
+              Материал 4
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="15" name="brand5">
+            <label for="15" class="filter__check-box--label">
+              Материал 5
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="16" name="brand1">
+            <label for="16" class="filter__check-box--label">
+              Материал 6
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="17" name="brand2">
+            <label for="17" class="filter__check-box--label">
+              Материал 7
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="18" name="brand3">
+            <label for="18" class="filter__check-box--label">
+              Материал 8
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="19" name="brand4">
+            <label for="19" class="filter__check-box--label">
+              Материал 9
+              <p class="filter__check-box--value">12</p>
+            </label>
+            <input class="filter__check-box--check" type="checkbox" id="20" name="brand5">
+            <label for="20" class="filter__check-box--label">
+              Материал 10
+              <p class="filter__check-box--value">12</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="products__field">
+      <div class="products__field-top">
+        <div class="sort">
+          <p class="sort__current">Дорогие</p>
+          <div class="sort__hidden">
+            <p class="sort__hidden-input">Дорогие</p>
+            <p class="sort__hidden-input">Дешёвые</p>
+            <p class="sort__hidden-input">Популярные</p>
+          </div>
+        </div>
+        <div class="view">
+          <button class="view__item" data-view="i_list">
+            <i class="view__item-icon icon-bulleted-list-2"></i>
+          </button>
+          <button class="view__item active" data-view="block">
+            <i class="view__item-icon icon-layout-2"></i>
+          </button>
+          <button class="view__item" data-view="list">
+            <i class="view__item-icon icon-justify"></i>
+          </button>
+        </div>
+      </div>
+      <div class="products__field-bottom">
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr4.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr3.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr1.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875 ₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr4.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product unavailable">
+          <div class="product__suggest">
+            <p class="product__suggest-item unavailable">Нет в наличии</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr2.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Гидроцилиндр 4081-4614010 накл</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new unavailable">351 375,25 ₽</p>
+            </div>
+            <button class="product__price-analog button--outline--small">Подобрать аналог</button>
+            <button class="product__price-click">Узнать о поступлении</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr3.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr1.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875 ₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr4.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product unavailable">
+          <div class="product__suggest">
+            <p class="product__suggest-item unavailable">Нет в наличии</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr2.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Гидроцилиндр 4081-4614010 накл</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new unavailable">351 375,25 ₽</p>
+            </div>
+            <button class="product__price-analog button--outline--small">Подобрать аналог</button>
+            <button class="product__price-click">Узнать о поступлении</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr1.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875 ₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr4.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+        <div class="product got">
+          <p class="product__link-discount">-5%</p>
+          <div class="product__suggest">
+            <p class="product__suggest-item green">Новинка</p>
+            <p class="product__suggest-item red">Акция</p>
+            <p class="product__suggest-item blue">Хит</p>
+          </div>
+          <a href="" class="product__link" title="Подробнее о *Название товара*">
+            <img src="img/pr3.png" alt="" class="product__link-image">
+            <div class="product__link-block">
+              <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+              <div class="product__link-chars">
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Внутренний диаметр, мм</p>
+                  <p class="product__chars-value">22</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Наружный диаметр, мм</p>
+                  <p class="product__chars-value">29.2</p>
+                </div>
+                <div class="product__link-chars--item">
+                  <p class="product__chars-name">Ширина, мм</p>
+                  <p class="product__chars-value">3.2</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="product__price">
+            <div class="product__price-value">
+              <p class="product__price-value--new">351 375,25 ₽</p>
+              <p class="product__price-value--old">450 875₽</p>
+            </div>
+            <div class="preview__buttons">
+              <div class="preview__buttons-col">
+                <button class="preview__buttons-col--button minus"></button>
+                <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                <button class="preview__buttons-col--button plus"></button>
+              </div>
+              <button class="button--light preview__buttons-cart">В корзину</button>
+            </div>
+            <button class="product__price-click">Купить в 1 клик</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates -->
+  <section class="catalog">
+    <div class="catalog--wrap">
+      <div class="catalog--left">
+        <button data-tab="1" class="catalog__item">Уплотнения</button>
+        <button data-tab="2" class="catalog__item">Гидроцилиндры</button>
+        <button data-tab="3" class="catalog__item">Фильтры</button>
+        <button class="catalog__item">Гидрораспределители</button>
+        <button class="catalog__item">Гидронасосы</button>
+        <button class="catalog__item">Гидромоторы</button>
+        <button class="catalog__item">Гидростанции</button>
+        <button class="catalog__item">Клапанная аппаратура</button>
+        <button class="catalog__item">Модульная гидравлика</button>
+        <button class="catalog__item">Насосы дозаторы</button>
+        <button class="catalog__item">Адаптеры и соединения</button>
+        <button class="catalog__item">Пневмооборудование</button>
+        <button class="catalog__item">Сальники</button>
+      </div>
+      <div class="catalog--right">
+        <div data-tab="1" class="catalog--peace block">
+          <div class="catalog__block">
+            <p class="catalog__title">Уплотнения поршня гидроцилиндров</p>
+            <div class="catalog__block-wrap">
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTU</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">GER</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/second.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">MRR</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">PDE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">PDH</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TPM</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TPM NEO</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/second.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTE / AE / KR</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTE / W</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/third.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTO</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTR</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTW</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TUT</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/fourth.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">ГОСТ</p>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__block">
+            <p class="catalog__title">Уплотнения штока</p>
+            <div class="catalog__block-wrap">
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">BUF</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">GIP</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/third.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">GIR</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">K31</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/fourth.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">PSE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TSE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTI</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/fourth.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTS</p>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__block">
+            <p class="catalog__title">Грязесъемники</p>
+            <div class="catalog__block-wrap">
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">BUF</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">GIP</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/third.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">GIR</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">K31</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/fourth.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">PSE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TSE</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/first.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTI</p>
+              </div>
+              <div class="catalog__block-wrap--item">
+                <img src="img/fourth.svg" alt="" class="catalog__block-image">
+                <p class="catalog__block-name">TTS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-tab="2" class="catalog--peace pseudo">
+          <div class="catalog__pseudo-list">
+            <div class="catalog__pseudo-list--item">
+              <a class="catalog__title">Адаптеры BSB</a>
+              <div class="catalog__pseudo-field">
+                <a href="" class="catalog__pseudo-field--item">Заглушки SGS</a>
+                <a href="" class="catalog__pseudo-field--item">Контграйки</a>
+                <a href="" class="catalog__pseudo-field--item">Крестовины</a>
+                <a href="" class="catalog__pseudo-field--item">Прямые адаптеры</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Полосатые адаптеры</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Полосатые адаптеры</a>
+              </div>
+            </div>
+            <div class="catalog__pseudo-list--item">
+              <a class="catalog__title">Адаптеры BSB</a>
+              <div class="catalog__pseudo-field">
+                <a href="" class="catalog__pseudo-field--item">Заглушки SGS</a>
+                <a href="" class="catalog__pseudo-field--item">Контграйки</a>
+                <a href="" class="catalog__pseudo-field--item">Крестовины</a>
+                <a href="" class="catalog__pseudo-field--item">Прямые адаптеры</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Полосатые адаптеры</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Полосатые адаптеры</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__pseudo-list">
+            <div class="catalog__pseudo-list--item">
+              <a class="catalog__title">Адаптеры DK</a>
+              <div class="catalog__pseudo-field">
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Крестовины</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Контграйки</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+              </div>
+            </div>
+            <div class="catalog__pseudo-list--item">
+              <a class="catalog__title">Адаптеры DK</a>
+              <div class="catalog__pseudo-field">
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Крестовины</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+                <a href="" class="catalog__pseudo-field--item">Контграйки</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Адаптеры прямые</a>
+              </div>
+            </div>
+            <a class="catalog__title">Прокладки JI</a>
+          </div>
+          <div class="catalog__pseudo-list">
+            <div class="catalog__pseudo-list--item">
+              <a class="catalog__title">Адаптеры DKO</a>
+              <div class="catalog__pseudo-field">
+                <a href="" class="catalog__pseudo-field--item">Заглушки SGS</a>
+                <a href="" class="catalog__pseudo-field--item">Контграйки</a>
+                <a href="" class="catalog__pseudo-field--item">Крестовины</a>
+                <a href="" class="catalog__pseudo-field--item">Прямые адаптеры</a>
+                <a href="" class="catalog__pseudo-field--item">Тройники</a>
+                <a href="" class="catalog__pseudo-field--item">Полосатые адаптеры</a>
+              </div>
+            </div>
+            <a class="catalog__title">Скобы GHJ</a>
+            <a class="catalog__title">Камлоки</a>
+            <a class="catalog__title">Поворотные соединения</a>
+          </div>
+        </div>
+        <div data-tab="3" class="catalog--peace list">
+          <a href="" class="catalog__list-item">Моноблочные распределители</a>
+          <a href="" class="catalog__list-item">Электроуправляемые распределители</a>
+          <a href="" class="catalog__list-item">Тракторные распределители</a>
+          <a href="" class="catalog__list-item">Катушки для распределителей</a>
+          <a href="" class="catalog__list-item">Диверторы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu">
+    <div class="menu__item">
+      <i class="menu__item-icon icon-catalog"></i>
+      <p class="menu__item-name">Каталог</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-pers"></i>
+      <p class="menu__item-name">Акции</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-user"></i>
+      <p class="menu__item-name">Профиль</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-cart"></i>
+      <p class="menu__item-name">Корзина</p>
+    </div>
+  </section>
+  <div id="click">
+    <form class="click">
+      <p class="sub--title">ОФОРМИТЬ БЫСТРЫЙ ЗАКАЗ</p>
+      <div class="click__field">
+        <div class="click__field-wrapper">
+          <img src="img/pr1.png" alt="" class="product__link-image">
+          <div class="product__link-block">
+            <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+            <div class="product__link-chars">
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Внутренний диаметр, мм</p>
+                <p class="product__chars-value">22</p>
+              </div>
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Наружный диаметр, мм</p>
+                <p class="product__chars-value">29.2</p>
+              </div>
+              <div class="product__link-chars--item">
+                <p class="product__chars-name">Ширина, мм</p>
+                <p class="product__chars-value">3.2</p>
+              </div>
+            </div>
+            <div class="product__price-value">
+              <p class="product__price-value--new">Количество: 1</p>
+              <p class="product__price-value--new">Стоимость: 351 375,25 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="click__inputs">
+          <div class="click__inputs-top">
+            <input type="text" class="click--input" placeholder="Имя" required>
+            <input type="email" class="click--input" placeholder="Email" required>
+            <input type="tel" class="click--input" placeholder="Телефон" required>
+          </div>
+          <textarea class="click--textarea" placeholder="Комментарий к заказу"></textarea>
+        </div>
+        <button type="submit" class="button--light click__button">Купить</button>
+      </div>
+      <a rel="modal:close" class="close--modal">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    <a rel="modal:close" class="close--modal">
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer--wrap">
+    <div class="footer--wrap--top">
+      <nav class="header__nav">
+        <a href="" class="header__nav-item red">Акции</a>
+        <a href="" class="header__nav-item">Оптовым покупателям</a>
+        <a href="" class="header__nav-item">Ремонт и обслуживание</a>
+        <a href="" class="header__nav-item">Гарантии</a>
+        <a href="" class="header__nav-item">О нас</a>
+        <a href="" class="header__nav-item">Новости</a>
+        <a href="" class="header__nav-item">Контакты</a>
+      </nav>
+      <div class="footer__contacts">
+        <div class="header__address">
+          <p class="header__address-text">Подольск, Садовая 20</p>
+        </div>
+        <div class="header__address time">
+          <p class="header__address-text">с 9:00 до 21:00</p>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <a href="" class="footer__socials-link">
+          <i class="footer__socials-link--icon icon-insta"></i>
+        </a>
+        <a href="" class="footer__socials-link">
+          <i class="footer__socials-link--icon icon-telegram-svgrepo-com-1"></i>
+        </a>
+        <a href="" class="footer__socials-link">
+          <i class="footer__socials-link--icon icon-facebook"></i>
+        </a>
+        <a href="" class="footer__socials-link">
+          <i class="footer__socials-link--icon icon-insta"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer--wrap--bottom">
+      <p class="footer__copyright">Copyright НГПРом 2022</p>
+      <a class="made-intrid" href="https://intrid.ru/corporate" title="Разработка корпоративных сайтов">made in INTRID</a>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/header.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/bottomMenu.js"></script>
+<script src="js/burgerMenu.js"></script>
+<script src="js/productsListeners.js"></script>
+<script src="js/upArrow.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/viewChanger.js"></script>
+<script src="js/rangeFilter.js"></script>
+<script src="js/filterSearch.js"></script>
+<script src="js/inputValidation.js"></script>
+</body>
+</html>
