@@ -220,7 +220,7 @@
                             <p class="order__name">Организация</p>
                             <div class="order__select org__select">
                                 <p class="order__select-item select__org">ООО “Красовщик”  /  info@gmail.com  /  +7 568 123 654 98 </p>
-                                <i class="order__select-icon icon-right"></i>
+                                <i class="order__select-icon icon-down"></i>
                             </div>
                             <div class="hidden__org">
                                 <div class="hidden__org-item">
@@ -341,7 +341,7 @@
                         </svg>
                         Самовывоз
                     </button>
-                    <button type="button" class="order__buttons-item delivery buttons__icons">
+                    <button type="button" class="order__buttons-item courier buttons__icons">
                         <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.934 24.0877H5.69192C4.96114 24.0877 4.37402 23.4943 4.37402 22.7698V8.92247C4.37402 8.1917 4.96739 7.60458 5.69192 7.60458H17.934C18.6648 7.60458 19.2519 8.19794 19.2519 8.92247V22.7698C19.2582 23.5006 18.6648 24.0877 17.934 24.0877Z" fill="#1F4692"/>
                             <path d="M30.9315 24.0877H20.3196C19.7325 24.0877 19.2578 23.613 19.2578 23.0259V12.6326C19.2578 12.0455 19.7325 11.5708 20.3196 11.5708H24.5919C25.2539 11.5708 25.891 11.8331 26.3657 12.2953L31.2438 17.086C31.7247 17.5607 31.9996 18.2102 31.9996 18.8911V23.0259C31.9933 23.613 31.5186 24.0877 30.9315 24.0877Z" fill="#1F4692"/>
@@ -377,35 +377,165 @@
                     </button>
                 </div>
                 <div class="order__item-inputs">
-                    <div class="order__item-inputs--item address__item">
-                        <p class="address__name">г.Тамбов, улица Киквидзе, 85Б</p>
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac10284a8705ef7cefedea6000c6dc4305281acddcfe7df901c5944acc9b6630e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                    <div class="pointer">
+                        <div class="pointer__left">
+                            <input type="text" class="pointer__left-input">
+                            <div class="variable">
+                                <input name="var__self" type="radio" class="variable__input" id="v11" checked>
+                                <label for="v11" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v12">
+                                <label for="v12" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v13">
+                                <label for="v13" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v14">
+                                <label for="v14" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v15">
+                                <label for="v15" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v16">
+                                <label for="v16" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v17">
+                                <label for="v17" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v18">
+                                <label for="v18" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v19">
+                                <label for="v19" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__self" type="radio" class="variable__input" id="v20">
+                                <label for="v20" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                            </div>
+                        </div>
+                        <div class="pointer__right">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="order__delivery">
-                    <div class="order__delivery-top">
-                        <div class="order__item-inputs--item">
-                            <p class="order__name">Улица <span>*</span></p>
-                            <input type="text" class="order__input" required disabled>
-                        </div>
-                        <div class="order__item-inputs--item">
-                            <p class="order__name">Дом <span>*</span></p>
-                            <input type="text" class="order__input" required disabled>
+                    <div class="company">
+                        <p class="company__title">Выберите компанию</p>
+                        <div class="company__field">
+                            <div class="company__field-item active">
+                                <img src="img/cdek.webp" alt="" class="company__field-item--image">
+                            </div>
+                            <div class="company__field-item">
+                                <img src="img/pochta.webp" alt="" class="company__field-item--image">
+                            </div>
+                            <div class="company__field-item">
+                                <img src="img/pek.webp" alt="" class="company__field-item--image">
+                            </div>
+                            <div class="company__field-item">
+                                <img src="img/dellin.webp" alt="" class="company__field-item--image">
+                            </div>
+                            <button type="button" class="company__field-item">Другая</button>
                         </div>
                     </div>
-                    <div class="order__delivery-bottom">
-                        <div class="order__item-inputs--item">
-                            <p class="order__name">Квартира <span>*</span></p>
-                            <input type="text" class="order__input" required disabled>
+                    <div class="send">
+                        <p class="send__title">Как вам отправить заказ</p>
+                        <div class="send__buttons">
+                            <button type="button" class="send__buttons-item active to_take">
+                                <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.9299 16.6898H10.3812C10.1724 16.6898 10 16.5173 10 16.3086V5.717C10 5.31766 10.3177 5 10.717 5H24.9389C25.5833 5 25.8828 5.7896 25.4109 6.22525L20.6279 10.5635C20.4645 10.7087 20.4645 10.9719 20.6279 11.1172L25.4018 15.4554C25.8828 15.8911 25.5743 16.6898 24.9299 16.6898Z" fill="#1B3E84"/>
+                                    <path d="M10.753 27H10.5533C10.2538 27 10.0088 26.7549 10.0088 26.4554V5.9348C10.0088 5.63529 10.2538 5.39024 10.5533 5.39024H10.753C11.0525 5.39024 11.2976 5.63529 11.2976 5.9348V26.4554C11.2976 26.7549 11.0525 27 10.753 27Z" fill="#1B3E84"/>
+                                </svg>
+                                До пункта выдачи
+                            </button>
+                            <button type="button" class="send__buttons-item to_self">
+                                <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6305 4.19229C10.9719 3.02755 6 7.31276 6 12.754C6 13.3277 6.05215 13.8927 6.16515 14.4316C6.16515 14.4316 6.16515 14.449 6.17384 14.4664C6.18253 14.4925 6.19123 14.5272 6.20861 14.5794C6.32161 14.9531 6.67799 16.0049 7.66889 17.8824C8.67717 19.786 10.3461 22.5501 13.1015 26.3311C13.1015 26.3311 13.1884 26.4528 13.3709 26.618C14.1619 27.3046 15.3875 27.3133 16.1524 26.6006C16.3262 26.4441 16.4045 26.3311 16.4045 26.3311C19.099 22.6196 20.7592 19.899 21.7762 17.9867C21.7936 17.9606 21.8023 17.9519 21.8197 17.9258C22.2977 17.0045 22.6454 16.283 22.8801 15.7354C23.0279 15.3964 23.1322 15.1183 23.2017 14.9184C23.3147 14.5794 23.3495 14.4229 23.3495 14.4229H23.3582C23.4103 14.1535 23.4625 13.8753 23.4885 13.5972C23.9145 9.21634 20.9418 5.07889 16.6305 4.19229ZM14.753 16.9958C12.5452 16.9958 10.7459 15.2052 10.7459 12.9974C10.7459 10.7896 12.5452 8.99904 14.753 8.99904C16.9608 8.99904 18.7513 10.7896 18.7513 12.9974C18.7513 15.2052 16.9608 16.9958 14.753 16.9958Z" fill="#9D9FA5"/>
+                                    <path d="M18.6648 27.5741C17.8738 27.5741 17.2393 26.9396 17.2393 26.1573V23.2107C17.1784 23.2194 17.1176 23.228 17.0481 23.228C16.8481 23.228 16.5526 23.1672 16.2658 22.8804C15.9355 22.5501 15.6834 21.8373 16.3092 21.2115C16.7525 20.7682 19.1776 18.5691 20.2033 17.6477C20.6292 17.2652 21.1594 17.0306 21.6983 16.9871L21.8548 16.9784L22.0026 16.9871C22.5502 17.0306 23.0804 17.2652 23.5063 17.6477C25.0709 19.0558 27.0092 20.829 27.4004 21.2202C28.0262 21.846 27.7741 22.5587 27.4525 22.889C27.1657 23.1759 26.8702 23.2367 26.6702 23.2367C26.6007 23.2367 26.5399 23.228 26.479 23.2194V26.166C26.479 26.9483 25.8358 27.5828 25.0448 27.5828H18.6648V27.5741Z" fill="#9D9FA5"/>
+                                    <path d="M21.8462 17.413C21.8897 17.413 21.9244 17.413 21.9679 17.413C22.4286 17.4478 22.8545 17.6564 23.2022 17.9606C24.1409 18.8037 26.6442 21.0724 27.0788 21.5157C27.6265 22.0633 27.1223 22.5674 27.1223 22.5674C26.9658 22.7239 26.8007 22.7847 26.6529 22.7847C26.3052 22.7847 26.0271 22.4805 26.0271 22.4805V26.1486C26.0271 26.6962 25.5838 27.1308 25.0275 27.1308H18.6562C18.1086 27.1308 17.6653 26.6875 17.6653 26.1486V22.4805C17.6653 22.4805 17.3871 22.7847 17.0394 22.7847C16.8917 22.7847 16.7265 22.7326 16.5701 22.5674C16.5701 22.5674 16.0659 22.0546 16.6135 21.5157C17.0568 21.0724 19.5602 18.8124 20.4902 17.9606C20.8379 17.6477 21.2638 17.4478 21.7245 17.413C21.768 17.413 21.8114 17.413 21.8462 17.413ZM21.8462 16.5438C21.794 16.5438 21.7332 16.5438 21.681 16.5525C21.0291 16.6046 20.412 16.8741 19.9078 17.3261C18.6301 18.4821 16.431 20.4813 15.9964 20.9072C15.2489 21.6635 15.414 22.6457 15.9442 23.1846C16.2398 23.4801 16.544 23.6018 16.7961 23.6366V26.1486C16.7961 27.1743 17.6305 28 18.6562 28H25.0275C26.0532 28 26.8963 27.1656 26.8963 26.1486V23.6366C27.1484 23.5931 27.4526 23.4714 27.7394 23.1846C28.2784 22.637 28.4435 21.6548 27.696 20.8985C27.2962 20.4987 25.3491 18.7255 23.7845 17.3174C23.2804 16.8567 22.6719 16.5959 22.0287 16.5438C21.9592 16.5438 21.907 16.5438 21.8462 16.5438Z" fill="white"/>
+                                </svg>
+                                До адреса получателя
+                            </button>
                         </div>
-                        <div class="order__item-inputs--item">
-                            <p class="order__name">Подъезд <span>*</span></p>
-                            <input type="text" class="order__input" required disabled>
+                    </div>
+                    <div class="pointer">
+                        <div class="pointer__left">
+                            <input type="text" class="pointer__left-input">
+                            <div class="variable">
+                                <input name="var__radio" type="radio" class="variable__input" id="v1" checked>
+                                <label for="v1" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v2">
+                                <label for="v2" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v3">
+                                <label for="v3" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v4">
+                                <label for="v4" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v5">
+                                <label for="v5" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v6">
+                                <label for="v6" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v7">
+                                <label for="v7" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v8">
+                                <label for="v8" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v9">
+                                <label for="v9" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__radio" type="radio" class="variable__input" id="v10">
+                                <label for="v10" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                            </div>
                         </div>
-                        <div class="order__item-inputs--item">
-                            <p class="order__name">Этаж <span>*</span></p>
-                            <input type="text" class="order__input" required disabled>
+                        <div class="pointer__right">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
                         </div>
+                    </div>
+                    <div class="del__address">
+                        <p class="del__address-title">Введите адрес доставки</p>
+                        <input type="text" class="del__address-input">
+                    </div>
+                </div>
+                <div class="order__moscow">
+                    <div class="send">
+                        <p class="send__title">Как вам отправить заказ</p>
+                        <div class="send__buttons">
+                            <button type="button" class="send__buttons-item active to_take">
+                                <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.9299 16.6898H10.3812C10.1724 16.6898 10 16.5173 10 16.3086V5.717C10 5.31766 10.3177 5 10.717 5H24.9389C25.5833 5 25.8828 5.7896 25.4109 6.22525L20.6279 10.5635C20.4645 10.7087 20.4645 10.9719 20.6279 11.1172L25.4018 15.4554C25.8828 15.8911 25.5743 16.6898 24.9299 16.6898Z" fill="#1B3E84"/>
+                                    <path d="M10.753 27H10.5533C10.2538 27 10.0088 26.7549 10.0088 26.4554V5.9348C10.0088 5.63529 10.2538 5.39024 10.5533 5.39024H10.753C11.0525 5.39024 11.2976 5.63529 11.2976 5.9348V26.4554C11.2976 26.7549 11.0525 27 10.753 27Z" fill="#1B3E84"/>
+                                </svg>
+                                До пункта выдачи
+                            </button>
+                            <button type="button" class="send__buttons-item to_self">
+                                <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6305 4.19229C10.9719 3.02755 6 7.31276 6 12.754C6 13.3277 6.05215 13.8927 6.16515 14.4316C6.16515 14.4316 6.16515 14.449 6.17384 14.4664C6.18253 14.4925 6.19123 14.5272 6.20861 14.5794C6.32161 14.9531 6.67799 16.0049 7.66889 17.8824C8.67717 19.786 10.3461 22.5501 13.1015 26.3311C13.1015 26.3311 13.1884 26.4528 13.3709 26.618C14.1619 27.3046 15.3875 27.3133 16.1524 26.6006C16.3262 26.4441 16.4045 26.3311 16.4045 26.3311C19.099 22.6196 20.7592 19.899 21.7762 17.9867C21.7936 17.9606 21.8023 17.9519 21.8197 17.9258C22.2977 17.0045 22.6454 16.283 22.8801 15.7354C23.0279 15.3964 23.1322 15.1183 23.2017 14.9184C23.3147 14.5794 23.3495 14.4229 23.3495 14.4229H23.3582C23.4103 14.1535 23.4625 13.8753 23.4885 13.5972C23.9145 9.21634 20.9418 5.07889 16.6305 4.19229ZM14.753 16.9958C12.5452 16.9958 10.7459 15.2052 10.7459 12.9974C10.7459 10.7896 12.5452 8.99904 14.753 8.99904C16.9608 8.99904 18.7513 10.7896 18.7513 12.9974C18.7513 15.2052 16.9608 16.9958 14.753 16.9958Z" fill="#9D9FA5"/>
+                                    <path d="M18.6648 27.5741C17.8738 27.5741 17.2393 26.9396 17.2393 26.1573V23.2107C17.1784 23.2194 17.1176 23.228 17.0481 23.228C16.8481 23.228 16.5526 23.1672 16.2658 22.8804C15.9355 22.5501 15.6834 21.8373 16.3092 21.2115C16.7525 20.7682 19.1776 18.5691 20.2033 17.6477C20.6292 17.2652 21.1594 17.0306 21.6983 16.9871L21.8548 16.9784L22.0026 16.9871C22.5502 17.0306 23.0804 17.2652 23.5063 17.6477C25.0709 19.0558 27.0092 20.829 27.4004 21.2202C28.0262 21.846 27.7741 22.5587 27.4525 22.889C27.1657 23.1759 26.8702 23.2367 26.6702 23.2367C26.6007 23.2367 26.5399 23.228 26.479 23.2194V26.166C26.479 26.9483 25.8358 27.5828 25.0448 27.5828H18.6648V27.5741Z" fill="#9D9FA5"/>
+                                    <path d="M21.8462 17.413C21.8897 17.413 21.9244 17.413 21.9679 17.413C22.4286 17.4478 22.8545 17.6564 23.2022 17.9606C24.1409 18.8037 26.6442 21.0724 27.0788 21.5157C27.6265 22.0633 27.1223 22.5674 27.1223 22.5674C26.9658 22.7239 26.8007 22.7847 26.6529 22.7847C26.3052 22.7847 26.0271 22.4805 26.0271 22.4805V26.1486C26.0271 26.6962 25.5838 27.1308 25.0275 27.1308H18.6562C18.1086 27.1308 17.6653 26.6875 17.6653 26.1486V22.4805C17.6653 22.4805 17.3871 22.7847 17.0394 22.7847C16.8917 22.7847 16.7265 22.7326 16.5701 22.5674C16.5701 22.5674 16.0659 22.0546 16.6135 21.5157C17.0568 21.0724 19.5602 18.8124 20.4902 17.9606C20.8379 17.6477 21.2638 17.4478 21.7245 17.413C21.768 17.413 21.8114 17.413 21.8462 17.413ZM21.8462 16.5438C21.794 16.5438 21.7332 16.5438 21.681 16.5525C21.0291 16.6046 20.412 16.8741 19.9078 17.3261C18.6301 18.4821 16.431 20.4813 15.9964 20.9072C15.2489 21.6635 15.414 22.6457 15.9442 23.1846C16.2398 23.4801 16.544 23.6018 16.7961 23.6366V26.1486C16.7961 27.1743 17.6305 28 18.6562 28H25.0275C26.0532 28 26.8963 27.1656 26.8963 26.1486V23.6366C27.1484 23.5931 27.4526 23.4714 27.7394 23.1846C28.2784 22.637 28.4435 21.6548 27.696 20.8985C27.2962 20.4987 25.3491 18.7255 23.7845 17.3174C23.2804 16.8567 22.6719 16.5959 22.0287 16.5438C21.9592 16.5438 21.907 16.5438 21.8462 16.5438Z" fill="white"/>
+                                </svg>
+                                До адреса получателя
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pointer">
+                        <div class="pointer__left">
+                            <input type="text" class="pointer__left-input">
+                            <div class="variable">
+                                <input name="var__moscow" type="radio" class="variable__input" id="v21" checked>
+                                <label for="v21" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v22">
+                                <label for="v22" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v23">
+                                <label for="v23" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v24">
+                                <label for="v24" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v25">
+                                <label for="v25" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v26">
+                                <label for="v26" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v27">
+                                <label for="v27" class="variable__lable">Воронеж, Московсвкий проспект 104</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v28">
+                                <label for="v28" class="variable__lable">Воронеж, Московсвкий проспект 98/456</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v29">
+                                <label for="v29" class="variable__lable">Воронеж, Комсомольская 30</label>
+                                <input name="var__moscow" type="radio" class="variable__input" id="v30">
+                                <label for="v30" class="variable__lable">Воронеж, Московсвкий проспект 1</label>
+                            </div>
+                        </div>
+                        <div class="pointer__right">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9168a6c3df502a2daeaa679c433e5893be53edb73dec2ec42568a92a3c6b4ffa&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="del__address">
+                        <p class="del__address-title">Введите адрес доставки</p>
+                        <input type="text" class="del__address-input">
                     </div>
                 </div>
             </div>
@@ -437,7 +567,7 @@
         </div>
         <div class="cart--right">
             <div class="cart__order">
-                <div class="cart__order-chars--item">
+                <div class="cart__order-chars--item bit">
                     <p class="cart__name big">Сумма заказа</p>
                     <p class="cart__value big">48 756,00 р</p>
                 </div>
