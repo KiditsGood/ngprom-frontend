@@ -16,6 +16,12 @@ $('.header__buttons-item.auth').click(() => {
     })
 })
 
+$('.order__item-none').click(() => {
+    $('#login').modal({
+        fadeDuration: 200
+    })
+})
+
 $('.login__form-forgot').click(() => {
     $('#reset').modal({
         fadeDuration: 200
