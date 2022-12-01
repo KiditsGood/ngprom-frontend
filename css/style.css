@@ -3841,6 +3841,19 @@ input[type = radio]{
     line-height: 24px;
     color: var(--neutral50);
 }
+.order__attention{
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--neutral50);
+    position: relative;
+}
+.order__attention:before{
+    content: '';
+    width: 5px;
+    height: 17px;
+    position: absolute;
+    background: url("../img/attention.svg") no-repeat center/contain;
+}
 
 /* Media Queries */
 @media (min-width: 1000px) and (max-width: 1370px) {
