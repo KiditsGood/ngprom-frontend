@@ -11,6 +11,7 @@
     outline: none;
     background: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 a, button, *:before, *:after{
     transition: 0.2s;
@@ -767,7 +768,7 @@ h1, .sub--title{
 }
 .popular__grid-item:hover{
     cursor: pointer;
-    border-color: var(--primary90);
+    border-color: var(--primary40);
 }
 .popular__grid-item--image{
     width: 95px;
@@ -874,7 +875,7 @@ h1, .sub--title{
     transition: 0.2s;
 }
 .service__choice:hover{
-    border-color: var(--primary90);
+    border-color: var(--primary40);
     cursor: pointer;
 }
 .service__choice-image{
@@ -1370,6 +1371,9 @@ h1, .sub--title{
     gap: 10px;
     justify-content: space-between;
 }
+.big__product-analog{
+    text-align: center;
+}
 .big__product-bottom--left{
     display: flex;
     flex-direction: column;
@@ -1808,6 +1812,10 @@ h1, .sub--title{
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+#analog--scroll{
+    padding-top: 90px;
+    margin-top: -90px;
 }
 .analog__slider-field{
     display: flex;
@@ -3085,8 +3093,18 @@ h1, .sub--title{
     align-items: center;
     gap: 12px;
 }
+.payment.cards .payment__text{
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    align-items: stretch;
+}
+.payment.cards svg{
+    width: 61px;
+    height: 35px;
+}
 .payment{
-    width: 273px;
+    width: 329px;
     height: 90px;
     display: flex;
     align-items: center;
@@ -3126,6 +3144,9 @@ h1, .sub--title{
 }
 input[type = radio]{
     display: none;
+}
+.payment__text svg{
+    stroke: white;
 }
 .order__yur{
     display: none;

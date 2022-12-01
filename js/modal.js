@@ -108,7 +108,7 @@ $('.login__switch-button').click(function () {
     }
 })
 
-$('.big__product-analog, .product__price-analog').click(function () {
+$('.product__price-analog').click(function () {
     $('#same').modal({
         fadeDuration: 200
     })
