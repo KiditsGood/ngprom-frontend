@@ -10,6 +10,441 @@
   <title>Title</title>
 </head>
 <body>
+<div class="modals">
+  <div id="login" class="default">
+    <form action="" class="login__form">
+      <p class="sub--title">Войти</p>
+      <div class="login__form-item">
+        <p class="login__form-name">Email</p>
+        <input type="email" class="login__form-input" required>
+      </div>
+      <div class="login__form-item">
+        <p class="login__form-name">Пароль</p>
+        <input type="password" class="login__form-input" required>
+      </div>
+      <button type="button" class="login__form-forgot">Забыли пароль?</button>
+      <button type="submit" class="login__form-submit button--light">Войти</button>
+      <p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go reg">Зарегистрироваться</span></p>
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="reset" class="default">
+    <form action="" class="login__form reset__form">
+      <p class="sub--title">Восстановить пароль</p>
+      <div class="login__form-item">
+        <p class="login__form-name">Email</p>
+        <input type="email" class="login__form-input" required>
+      </div>
+      <div class="login__form-buttons">
+        <button type="button" class="login__form-cancel button--outline">Отмена</button>
+        <button type="submit" class="login__form-link button--light">Отправить ссылку</button>
+      </div>
+
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="success" class="default">
+    <form action="" class="login__form reset__form">
+      <img src="img/success_check.svg" alt="" class="login__form-success">
+      <div class="login__form-text">
+        <p class="login__form-text--title">Код отправлен</p>
+        <p class="login__form-text--desc">Мы отправили код на вашу почту. Если не нашли сообщение, проверьте папку спам.</p>
+        <p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
+      </div>
+
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="reg" class="default">
+    <form action="" class="login__form">
+      <p class="sub--title">Регистрация</p>
+      <div class="login__flex">
+        <div class="login__form-item">
+          <p class="login__form-name">Имя</p>
+          <input type="text" class="login__form-input" required>
+        </div>
+        <div class="login--flex">
+          <div class="login__form-item">
+            <p class="login__form-name">Телефон</p>
+            <input type="tel" class="login__form-input" required>
+          </div>
+          <div class="login__form-item">
+            <p class="login__form-name">Email</p>
+            <input type="email" class="login__form-input" required>
+          </div>
+        </div>
+      </div>
+      <div class="login__switch">
+        <button type="button" class="login__switch-button active button--outline">Физическое лицо</button>
+        <button type="button" class="login__switch-button button--outline">Юридическое лицо</button>
+      </div>
+      <div class="login__hidden">
+        <div class="login__form-item">
+          <p class="login__form-name">Наименование</p>
+          <input type="text" class="login__form-input yur" required readonly>
+        </div>
+        <div class="login--flex">
+          <div class="login__form-item">
+            <p class="login__form-name">ИНН</p>
+            <input type="text" class="login__form-input yur" required readonly>
+          </div>
+          <div class="login__form-item">
+            <p class="login__form-name">КПП</p>
+            <input type="text" class="login__form-input yur" required readonly>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="login__form-submit button--light">Зарегистрироваться</button>
+      <p class="login__form-reg">Уже есть аккаунт? <span class="login__form-reg--go entry">Вход</span></p>
+      <a href="" rel="modal:close" class="login__form-close">
+        <span></span>
+        <span></span>
+      </a>
+    </form>
+  </div>
+  <div id="same">
+    <div class="analog__slider">
+      <p class="sub--title">Подобрать аналоги</p>
+      <div class="analog__slider-field swiper">
+        <div class="swiper-wrapper">
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr1.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875 ₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr3.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr4.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr1.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875 ₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr3.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+          <div class="product got swiper-slide">
+            <p class="product__link-discount">-5%</p>
+            <div class="product__suggest">
+              <p class="product__suggest-item green">Новинка</p>
+              <p class="product__suggest-item red">Акция</p>
+              <p class="product__suggest-item blue">Хит</p>
+            </div>
+            <a href="" class="product__link" title="Подробнее о *Название товара*">
+              <img src="img/pr4.png" alt="" class="product__link-image">
+              <div class="product__link-block">
+                <p class="product__link-title">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</p>
+                <div class="product__link-chars">
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Внутренний диаметр, мм</p>
+                    <p class="product__chars-value">22</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Наружный диаметр, мм</p>
+                    <p class="product__chars-value">29.2</p>
+                  </div>
+                  <div class="product__link-chars--item">
+                    <p class="product__chars-name">Ширина, мм</p>
+                    <p class="product__chars-value">3.2</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="product__price">
+              <div class="product__price-value">
+                <p class="product__price-value--new">351 375,25 ₽</p>
+                <p class="product__price-value--old">450 875₽</p>
+              </div>
+              <div class="preview__buttons">
+                <div class="preview__buttons-col">
+                  <button class="preview__buttons-col--button minus"></button>
+                  <input maxlength="3" type="text" class="preview__buttons-col--input" value="1">
+                  <button class="preview__buttons-col--button plus"></button>
+                </div>
+                <button class="button--light preview__buttons-cart">В корзину</button>
+              </div>
+              <button class="product__price-click">Купить в 1 клик</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="product__slider-prev icon-left-lg-2"></i>
+      <i class="product__slider-next icon-left-lg-2"></i>
+    </div>
+    <form action="" class="feedback">
+      <div class="feedback__top">
+        <div class="feedback__text">
+          <p class="feedback__text-title">Есть вопросы?</p>
+          <p class="feedback__text-desc">Позвоните или отправьте заявку</p>
+        </div>
+        <a href="tel: +7 961 481 37 37" class="feedback__call">
+          <i class="feedback__call-icon icon-phone"></i>
+          +7 961 481 37 37
+        </a>
+      </div>
+      <div class="feedback__bottom">
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Имя</p>
+          <input type="text" class="feedback__bottom-item--input">
+        </div>
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Телефон</p>
+          <input type="tel" class="feedback__bottom-item--input">
+        </div>
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Email</p>
+          <input type="email" class="feedback__bottom-item--input">
+        </div>
+      </div>
+      <button type="submit" class="feedback__button">Отправить</button>
+    </form>
+    <a href="" rel="modal:close" class="login__form-close">
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+  <div id="feedback">
+    <form action="" class="feedback">
+      <div class="feedback__top">
+        <div class="feedback__text">
+          <p class="feedback__text-title">Есть вопросы?</p>
+          <p class="feedback__text-desc">Позвоните или отправьте заявку</p>
+        </div>
+        <a href="tel: +7 961 481 37 37" class="feedback__call">
+          <i class="feedback__call-icon icon-phone"></i>
+          +7 961 481 37 37
+        </a>
+      </div>
+      <div class="feedback__bottom">
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Имя</p>
+          <input type="text" class="feedback__bottom-item--input">
+        </div>
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Телефон</p>
+          <input type="tel" class="feedback__bottom-item--input">
+        </div>
+        <div class="feedback__bottom-item">
+          <p class="feedback__bottom-item--name">Email</p>
+          <input type="email" class="feedback__bottom-item--input">
+        </div>
+      </div>
+      <button type="submit" class="feedback__button">Отправить</button>
+    </form>
+    <a href="" rel="modal:close" class="login__form-close">
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+</div>
 <header class="header">
   <div class="header__top">
     <div class="header__top-wrap">
@@ -1095,6 +1530,7 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script src="js/sliders.js"></script>
 <script src="js/header.js"></script>
 <script src="js/catalog.js"></script>
@@ -1105,5 +1541,6 @@
 <script src="js/bigCard.js"></script>
 <script src="js/inputValidation.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/phoneMask.js"></script>
 </body>
 </html>

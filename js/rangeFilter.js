@@ -1,4 +1,5 @@
 let sliderRan = document.querySelectorAll('.filter__range-slider');
+let catalogParent = $('.catalog__filter-item')
 
 sliderRan.forEach(sliderElement => {
     let inputMax = sliderElement.parentElement.firstElementChild.lastElementChild
@@ -9,8 +10,6 @@ sliderRan.forEach(sliderElement => {
     let startMax = sliderElement.getAttribute('data-max-new')
 
     if (sliderElement) {
-        console.log(123)
-
         noUiSlider.create(sliderElement, {
             start: [startMin, startMax],
             connect: true,
@@ -37,5 +36,9 @@ sliderRan.forEach(sliderElement => {
         inputMax.addEventListener('change', function() {
             sliderElement.noUiSlider.set([null, this.value]);
         });
+
+        sliderElement.noUiSlider.on('change', function () {
+            
+        })
     }
 })

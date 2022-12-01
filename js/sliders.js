@@ -131,3 +131,26 @@ const bigCardRight = new Swiper('.product__card-images--right', {
         swiper: bigCardLeft
     }
 })
+
+const analogModalSlider = new Swiper('#same .analog__slider-field', {
+    loop: true,
+    navigation: {
+        prevEl: '#same .product__slider-prev',
+        nextEl: '#same .product__slider-next'
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 2,
+            spaceBetween: 8
+        },
+
+        573:{
+            slidesPerView: 3
+        },
+
+        1000: {
+            spaceBetween: 20,
+            slidesPerView: 3
+        }
+    }
+})

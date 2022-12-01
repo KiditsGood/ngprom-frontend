@@ -107,3 +107,15 @@ $('.login__switch-button').click(function () {
         hiddenInput.removeAttr('disabled')
     }
 })
+
+$('.big__product-analog, .product__price-analog').click(function () {
+    $('#same').modal({
+        fadeDuration: 200
+    })
+})
+
+$('.product.unavailable .product__price-click').click(function () {
+    $('#feedback').modal({
+        fadeDuration: 200
+    })
+})
