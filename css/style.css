@@ -594,6 +594,7 @@ h1, .sub--title{
 }
 .product__slider-field--item:hover{
     border-color: var(--primary40);
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .product__slider-link:hover img{
     transform: scale(1.1);
@@ -1855,6 +1856,7 @@ h1, .sub--title{
     .product.got:hover, .product.unavailable:hover{
         border-bottom: none;
         border-radius: 12px 12px 0 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     }
     .product.got:hover .product__price-click, .product.unavailable:hover .product__price-click{
         transform: translateY(0);
