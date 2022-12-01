@@ -1,7 +1,7 @@
 let sliderRan = document.querySelectorAll('.filter__range-slider');
 let catalogParent = $('.catalog__filter-item')
 
-sliderRan.forEach(sliderElement => {
+sliderRan.forEach((sliderElement, index) => {
     let inputMax = sliderElement.parentElement.firstElementChild.lastElementChild
     let inputMin = sliderElement.parentElement.firstElementChild.firstElementChild
     let min = +sliderElement.dataset.min
@@ -38,7 +38,42 @@ sliderRan.forEach(sliderElement => {
         });
 
         sliderElement.noUiSlider.on('change', function () {
-            
+            $('.filter--submit').remove()
+
+            $(this.target.parentElement.parentElement).prepend(`
+              <div class="filter--submit">
+                <div class="filter__submit-triangle"></div>
+                <div class="filter__submit">
+                  <button class="filter__submit-button">Применить <span class="filter__submit-button--value">(451)</span></button>
+                </div>
+              </div>
+            `)
         })
     }
+})
+
+$('.range--min, .range--max').on('change', function () {
+    $('.filter--submit').remove()
+
+    $(this).parent().parent().parent().prepend(`
+      <div class="filter--submit">
+        <div class="filter__submit-triangle"></div>
+        <div class="filter__submit">
+          <button class="filter__submit-button">Применить <span class="filter__submit-button--value">(451)</span></button>
+        </div>
+      </div>
+    `)
+})
+
+$('.search__check label').on('click', function () {
+    $('.filter--submit').remove()
+
+    $(this).parent().parent().prepend(`
+      <div class="filter--submit">
+        <div class="filter__submit-triangle"></div>
+        <div class="filter__submit">
+          <button class="filter__submit-button">Применить <span class="filter__submit-button--value">(451)</span></button>
+        </div>
+      </div>
+    `)
 })

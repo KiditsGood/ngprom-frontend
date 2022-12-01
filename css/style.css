@@ -2470,6 +2470,9 @@ h1, .sub--title{
     right: -15px;
     bottom: 40px;
 }
+.filter--submit.extend{
+    display: none;
+}
 .filter__submit{
     border: 1px solid var(--primary20);
     background: white;
@@ -3336,7 +3339,7 @@ input[type = radio]{
     height: 20px;
     border: 2px solid var(--neutral20);
     border-radius: 4px;
-    top: 2px;
+    top: -2px;
     transition: 0.2s;
 }
 .filter__check-box--label:hover{
@@ -4986,5 +4989,8 @@ input[type = radio]{
     }
     .footer--wrap--bottom{
         gap: 0;
+    }
+    .filter--submit.extend{
+        display: block;
     }
 }
