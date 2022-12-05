@@ -594,7 +594,7 @@ h1, .sub--title{
 }
 .product__slider-field--item:hover{
     border-color: var(--primary40);
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
 }
 .product__slider-link:hover img{
     transform: scale(1.1);
@@ -743,7 +743,7 @@ h1, .sub--title{
     flex-direction: column;
     gap: 34px;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 72px auto 0;
     box-sizing: border-box;
     padding: 42px 50px 56px;
     border: 1px solid var(--neutral10);
@@ -770,6 +770,13 @@ h1, .sub--title{
 .popular__grid-item:hover{
     cursor: pointer;
     border-color: var(--primary40);
+    box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
+}
+.popular__grid-item--text{
+    transition: 0.2s;
+}
+.popular__grid-item:hover .popular__grid-item--text{
+    color: var(--primary60);
 }
 .popular__grid-item--image{
     width: 95px;
@@ -878,6 +885,10 @@ h1, .sub--title{
 .service__choice:hover{
     border-color: var(--primary40);
     cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
+}
+.service__choice:hover .service__choice-text--name{
+    color: var(--primary60);
 }
 .service__choice-image{
     width: 256px;
@@ -1856,7 +1867,7 @@ h1, .sub--title{
     .product.got:hover, .product.unavailable:hover{
         border-bottom: none;
         border-radius: 12px 12px 0 0;
-        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+        box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
     }
     .product.got:hover .product__price-click, .product.unavailable:hover .product__price-click{
         transform: translateY(0);
@@ -2229,6 +2240,10 @@ h1, .sub--title{
 .point__field-item:hover{
     cursor: pointer;
     border-color: var(--primary60);
+    box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
+}
+.point__field-item:hover .point__field-item--name{
+    color: var(--primary60);
 }
 
 .products{
@@ -3021,6 +3036,12 @@ h1, .sub--title{
     color: var(--primary70);
     border-color: var(--primary70);
 }
+.order__buttons-item.active .payment__text{
+    color: var(--primary60);
+}
+.order__buttons-item:hover .payment__text{
+    color: var(--primary60);
+}
 .order__buttons-item:not(.buttons__icons):hover svg path{
     fill: var(--primary70);
 }
@@ -3405,6 +3426,12 @@ input[type = radio]{
 }
 .buttons__icons:first-child:hover svg path:last-child{
     stroke: var(--primary70);
+}
+.buttons__icons:last-child.active svg path:first-child{
+    fill: var(--primary70);
+}
+.buttons__icons:last-child:hover svg path:first-child{
+    fill: var(--primary70);
 }
 .company{
     display: flex;
@@ -3855,7 +3882,181 @@ input[type = radio]{
     background: url("../img/attention.svg") no-repeat center/contain;
 }
 
+/* Small Card */
+
+.products__field-bottom{
+
+}
+.products__field-bottom.hidden{
+    display: none;
+}
+.products__field-line{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+.products__field-line.active{
+    display: flex;
+}
+.stroke{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 24px;
+    border: 1px solid var(--primary10);
+    border-radius: 16px;
+    transition: 0.2s;
+}
+.stroke:hover{
+    border-color: var(--primary60);
+    box-shadow: rgba(100, 100, 111, 0.3) 0 14px 58px 0;
+}
+.stroke__link{
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    max-width: 320px;
+}
+.name__art{
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--neutral50);
+}
+.stroke .preview__buttons-col{
+    align-self: flex-start;
+}
+.stroke .product__price-click{
+    position: unset;
+    transform: unset;
+    z-index: unset;
+    padding: 0;
+    border: none;
+}
+.stroke .preview__buttons-cart{
+    padding: 8px 11px;
+    min-width: 102px;
+    margin-right: 10px;
+}
+.stroke .product__price-value{
+    gap: 16px;
+}
+.stroke .product__link-discount{
+    position: unset;
+}
+.stroke .product__price{
+    justify-content: space-between;
+    padding: unset;
+}
+
+/* Up Button */
+
+.up{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 10;
+}
+.up__outer{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary60);
+    background: var(--primary60);
+    border-radius: 12px;
+}
+.up__outer:hover{
+    background: white;
+}
+.up__outer:hover i{
+    color: var(--primary60);
+}
+.up__outer i{
+    font-size: 24px;
+    height: 24px;
+    color: white;
+    transform: rotate(90deg);
+    margin-left: -5px;
+}
+
 /* Media Queries */
+@media (min-width: 1000px) and (max-width: 1410px){
+    .stroke{
+        padding: 10px 12px;
+        gap: 10px;
+    }
+    .stroke__link{
+        gap: 15px;
+    }
+    .name{
+        max-width: 200px;
+    }
+    .stroke .preview__buttons-cart{
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 6px 8px;
+    }
+    .stroke .product__price-click{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .stroke .product__price-value{
+        gap: 8px;
+    }
+    .stroke .preview__buttons-col--button{
+        width: 30px;
+        height: 30px;
+    }
+    .stroke .preview__buttons-col--input{
+        width: 34px;
+    }
+    .stroke .product__price-value{
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .stroke .product__link-discount{
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    .stroke .product__link-title{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .name__art{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .stroke .product__chars-name, .stroke .product__chars-value{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .stroke .product__chars-name{
+        width: 140px;
+    }
+    .stroke .product__price-value--new{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .stroke .product__price-value--old{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .stroke .product__price{
+        margin-top: unset;
+    }
+}
+
 @media (min-width: 1000px) and (max-width: 1370px) {
     .i_list .product__link{
         gap: 0;
@@ -5028,5 +5229,8 @@ input[type = radio]{
     }
     .filter--submit.extend{
         display: block;
+    }
+    .products__field-line{
+        display: none;
     }
 }
